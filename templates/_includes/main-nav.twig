@@ -1,0 +1,51 @@
+<nav class="nav bg-black">
+  <div class="nav__upper container flex justify-end border-b border-grey-800 lg:hidden">
+    <ul class="nav__upper__menu justify-end">
+      <li class="nav__upper__menu__item brick-finder"><a class="flex items-center gap-8" href="">Brick Finder<span>{{ svg('@webroot/assets/images/svg/brick-finder.svg')|attr({'width':'19px', 'height':'15px'}) }}</span></a></li>
+      <li class="nav__upper__menu__item hidden"><a href="">Our Locations</a></li>
+      <li class="nav__upper__menu__item hidden"><a href="">Search</a></li>
+      <li class="nav__upper__menu__item hidden"><a href="">Contact</a></li>
+    </ul>
+  </div>
+  <div class="nav__lower container w-full  max-w-screen">
+
+    <div class="nav__lower__logo flex flex-row items-center justify-between w-full">
+      <a href="{{siteUrl }}" class="flex focus:outline-none focus:shadow-outline">
+        <span title="{{ siteName }}">{{ svg('@webroot/assets/images/svg/brickibility-logo.svg') }}</span>
+      </a>
+
+      <div class="nav__lower__burger">
+        <span class="h-[2px] w-[14px] bg-white rounded-full"></span>
+        <span class="h-[2px] w-[23px] bg-white rounded-full"></span>
+        <span class="h-[2px] w-[23px] bg-white rounded-full"></span>
+      </div>
+    </div>
+
+    {# main nav #}
+    <nav class="header__nav">
+
+      <ul class="header__nav__upper flex justify-end gap-44">
+        <li><a href="" class="flex items-center gap-8 text-grey-300"><span>{{ svg('@webroot/assets/images/svg/brick-finder.svg')|attr({'width':'19px', 'height':'15px'}) }}</span>Brick Finder</a></li>
+        <li><a href="" class="flex items-center gap-8 text-grey-300"><span>{{ svg('@webroot/assets/images/svg/map-pin.svg')|attr({'width':'19px', 'height':'15px'}) }}</span>Our Locations</a></li>
+        <li><a href="" class="flex items-center gap-8 text-grey-300"><span>{{ svg('@webroot/assets/images/svg/search.svg')|attr({'width':'19px', 'height':'15px'}) }}</span>Search</a></li>
+        <li><a href="" class="flex items-center gap-8 text-grey-300"><span>{{ svg('@webroot/assets/images/svg/mail.svg')|attr({'width':'19px', 'height':'15px'}) }}</span>Contact</a></li>
+      </ul>
+
+      <ul class="header__nav__lower flex flex-row pl-0 m-0 gap-52 lg:flex-row">
+        <li class="header__nav__link sub-menu"><a href="">Products<span title="{{ siteName }}">{{ svg('@webroot/assets/images/svg/chevron-down.svg') }}</span></a></li>
+        <li class="header__nav__link sub-menu"><a href="">Services<span title="{{ siteName }}">{{ svg('@webroot/assets/images/svg/chevron-down.svg') }}</span></a></li>
+        <li class="header__nav__link"><a href="">Resources</a></li>
+        <li class="header__nav__link"><a href="">Projects</a></li>
+        <li class="header__nav__link"><a href="">News</a></li>
+        <li class="header__nav__link sub-menu"><a href="">About<span title="{{ siteName }}">{{ svg('@webroot/assets/images/svg/chevron-down.svg') }}</span></a></li>
+      </ul> 
+    </nav>
+  </div>
+</nav>
+
+
+{% js %}
+  function toggleOverflow() {
+    document.getElementById('body').classList.toggle('overflow-hidden');
+  }
+{% endjs %}

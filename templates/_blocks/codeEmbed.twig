@@ -1,0 +1,15 @@
+{# use block layout #}
+{% extends '_blocks/_layout' %}
+
+{# section background #}
+{% set background = 'bg-gray-100' %}
+
+{% block body %}
+
+  {% if block.sectionTitle|length %}
+    <h2>{{ block.sectionTitle ?? "Video Block" }}</h2>
+  {% endif %}
+
+  {{ block.embed|raw }}
+
+{% endblock %}

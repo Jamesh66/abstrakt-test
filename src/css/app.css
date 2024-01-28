@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /*
+      Override the default colour theme in Plyr:
+      https://github.com/sampotts/plyr#customizing-the-css
+    */
+    --plyr-color-main: theme('colors.red.600');
+    }
+}
+
+@layer components {
+
+  [x-cloak] {
+    display: none;
+  }
+
+  html {
+    /*
+    prefers motion reduced disable smooth scrolling
+    */
+    @apply scroll-smooth motion-reduce:scroll-auto;
+  }
+
+  body {
+    @apply font-display;
+  }
+
+  /* Ultility classes */
+
+  .container {
+    @apply px-[1rem] md:px-[3rem];
+  }
+
+  h1, h2, h3, h4, h5, h6, .h4, .h5 {
+    @apply leading-tight;
+  }
+  h1 {
+    @apply text-4xl;
+  }
+  h2 {
+    @apply mb-8 text-3xl;
+  }
+  h3 {
+    @apply text-2xl;
+  }
+  a {
+    @apply underline-offset-2 hover:no-underline;
+  }
+
+  a.skip-main {
+    @apply absolute top-[40px] w-[1px] h-[1px] overflow-hidden;
+    left: -999px;
+    z-index: -999;
+    background: #2d2828;
+  }
+
+  a.skip-main:focus,
+  a.skip-main:active {
+    @apply text-white bg-[#2d2828] left-[5px] top-[50px] min-w-[200px] text-center my-[10px] mx-[5px] p-[10px] text-base z-[999] no-underline border border-black;
+  }
+
+  .btn {
+    @apply inline-block px-6 py-1 text-white transition duration-200 bg-gray-400 hover:bg-gray-300 hover:text-gray-700;
+  }
+
+  /* padding used in matrix blocks */
+  .section-y-padding {
+    @apply py-24;
+  }
+  .section-t-padding {
+   @apply pt-24;
+ }
+ .section-b-padding {
+   @apply pb-24;
+ }
+ .section-no-padding {
+   @apply p-0;
+ }
+
+  /* form fields */
+  .floating-input {
+    @apply px-6 py-2 text-lg text-gray-900 placeholder-transparent border border-gray-200 focus:outline-none focus:border-gray-400;
+  }
+  .floating-select {
+    @apply w-full px-6 py-2 text-lg text-gray-900 placeholder-transparent border border-gray-200 focus:outline-none focus:border-gray-400;
+  }
+  .floating-label {
+    @apply absolute text-lg text-gray-400 transition-all duration-300 left-4 top-2.5;
+  }
+  .floating-input:focus~label, .floating-input:not(:placeholder-shown)~label, .floating-select:focus~label, .floating-select:not([value=""]):valid ~ label {
+      @apply text-gray-600 -top-7;
+  }
+
+  /*
+    override typography plugin max width setting of 65ch
+    https://tailwindcss.com/docs/typography-plugin#overriding-max-width
+  */
+  .prose {
+    @apply max-w-none;
+  }
+
+  /* Nav */
+  nav .nav__upper ul li {
+    @apply font-text text-xs p-0 text-grey-300 md:text-base; 
+  }
+
+  nav .nav__lower {
+    @apply border-b border-grey-800 flex items-center;
+  }
+
+  nav .nav__lower .nav__lower__logo svg{
+    @apply w-[100px] md:w-[128px] lg:w-[154px];
+  }
+
+  nav .nav__lower__burger {
+    @apply w-[44px] h-[44px] flex flex-col gap-[5px] items-end justify-center lg:hidden;
+  }
+
+  nav .header__nav {
+    @apply  lg:flex-col hidden pb-4 lg:pb-0 lg:flex justify-end;
+  }
+
+  nav .header__nav .sub-menu {
+    @apply relative after:content-link after:absolute after:-right-5 after:text-lg;
+  }
+
+  .header__nav .header__nav__upper {
+    @apply border-b border-grey-800 py-8;
+  }
+
+  .header__nav .header__nav__lower {
+    @apply py-24;
+  } 
+
+
+  nav .header__nav .header__nav__link  a{
+    @apply font-bold font-text text-white flex items-center gap-[7px];
+  }
+  
+  /* end nav */
+
+  /* Footer */
+  
+  footer h4 {
+    @apply text-white text-xs font-text uppercase;
+  }
+
+  footer a {
+    @apply text-white;
+  }
+
+  footer p {
+    @apply text-white;
+  }
+
+  footer .footer__logo svg {
+    @apply w-[132px] h-[60px] lg:w-[154px] lg:h-[70px];
+  }
+
+  /* footer .footer__contact .footer_contact__address p {
+    @apply ;
+  } */
+
+  footer .footer__nav ul {
+    @apply grid grid-cols-2 gap-y-10 gap-x-[4.6rem] font-text flex-grow-0;
+  }
+
+  footer .footer__nav ul li {
+    @apply w-fit;
+  }
+
+  footer .footer__copyright {
+    @apply pt-[2rem] lg:pt-5 border-t border-grey-800;
+  }
+
+  footer .footer__copyright ul li a {
+    @apply font-text text-xs text-grey-400 underline;
+  }
+
+  /* end Footer */
+
+}
+/* end components layer */
