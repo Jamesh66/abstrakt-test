@@ -4,7 +4,7 @@ const pkg = require("./package.json");
 
 let mix = require('laravel-mix');
 
-const baseUrl = 'https://craft-starter.ddev.site';
+const baseUrl = 'http://localhost:8888/';
 const homedir = require('os').homedir();
 
 const moment = require("moment");
@@ -47,7 +47,7 @@ mix.setPublicPath('./public/assets/')
     processCssUrls: false,
     hmrOptions: {
       host: baseUrl,
-      port: 8080
+      port: 8888
     },
     devtool: 'eval-cheap-module-source-map'
   })

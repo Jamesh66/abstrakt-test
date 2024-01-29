@@ -1,27 +1,46 @@
-description: null
+description: ''
 handle: siteAdmin
 name: 'Site Admin'
 permissions:
   - accesscp
+  - accesscpwhensystemisoff
   - accessplugin-seomatic
+  - accessplugin-sprig
   - accessplugin-usermanual
+  - accesssitewhensystemisoff
+  - administrateusers
   - 'assignusergroup:0878c4de-b946-4c8e-bcce-fe18cd77a73e' # Site Admin
+  - 'assignusergroup:de5a59b9-8f12-4d5c-b5ad-82e0be0a2df1' # James
+  - assignuserpermissions
+  - 'createentries:0784ad32-f952-40b1-9f6c-d0e67d502551' # User Guide
+  - 'createentries:4b342e70-0223-4c29-9237-86a023f74f1b' # News Categories
   - 'createentries:666b31c2-d6d5-4e80-b9aa-f57b66d5b54a' # Pages
   - 'createentries:9c12e5ad-18e9-498f-bf50-489513409007' # News
+  - 'createentries:ce27286a-7635-4494-9c9c-77f2d73352f4' # Fragments
   - 'createfolders:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
   - 'createfolders:d19b4314-0267-4e95-9e63-2462a334eea1' # User Guide
   - 'deleteassets:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
   - 'deleteassets:d19b4314-0267-4e95-9e63-2462a334eea1' # User Guide
+  - 'deleteentries:0784ad32-f952-40b1-9f6c-d0e67d502551' # User Guide
+  - 'deleteentries:4b342e70-0223-4c29-9237-86a023f74f1b' # News Categories
   - 'deleteentries:666b31c2-d6d5-4e80-b9aa-f57b66d5b54a' # Pages
   - 'deleteentries:9c12e5ad-18e9-498f-bf50-489513409007' # News
+  - 'deleteentries:ce27286a-7635-4494-9c9c-77f2d73352f4' # Fragments
   - 'deletepeerassets:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
   - 'deletepeerassets:d19b4314-0267-4e95-9e63-2462a334eea1' # User Guide
+  - 'deletepeerentries:0784ad32-f952-40b1-9f6c-d0e67d502551' # User Guide
+  - 'deletepeerentries:4b342e70-0223-4c29-9237-86a023f74f1b' # News Categories
   - 'deletepeerentries:666b31c2-d6d5-4e80-b9aa-f57b66d5b54a' # Pages
   - 'deletepeerentries:9c12e5ad-18e9-498f-bf50-489513409007' # News
+  - 'deletepeerentries:ce27286a-7635-4494-9c9c-77f2d73352f4' # Fragments
+  - 'deletepeerentrydrafts:0784ad32-f952-40b1-9f6c-d0e67d502551' # User Guide
   - 'deletepeerentrydrafts:29d88d99-dd38-43f6-9ac5-3438833c75ba' # Error 404
   - 'deletepeerentrydrafts:408314ae-e32d-471b-a729-25f4ce759ac4' # Notice Bar
+  - 'deletepeerentrydrafts:4b342e70-0223-4c29-9237-86a023f74f1b' # News Categories
   - 'deletepeerentrydrafts:666b31c2-d6d5-4e80-b9aa-f57b66d5b54a' # Pages
   - 'deletepeerentrydrafts:9c12e5ad-18e9-498f-bf50-489513409007' # News
+  - 'deletepeerentrydrafts:ce27286a-7635-4494-9c9c-77f2d73352f4' # Fragments
+  - deleteusers
   - 'editglobalset:415a954c-eb55-4533-9ffd-64b3eade9469' # Fallback
   - 'editimages:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
   - 'editimages:d19b4314-0267-4e95-9e63-2462a334eea1' # User Guide
@@ -29,24 +48,38 @@ permissions:
   - 'editpeerimages:d19b4314-0267-4e95-9e63-2462a334eea1' # User Guide
   - 'editsite:1a78d395-d81a-4b77-8da7-30a49123bbee' # English
   - 'editsite:b9fdef79-5b63-4932-a9aa-8d18f937e6d9' # Français
+  - editusers
+  - impersonateusers
+  - moderateusers
+  - performupdates
+  - registerusers
   - 'replacefiles:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
   - 'replacefiles:d19b4314-0267-4e95-9e63-2462a334eea1' # User Guide
   - 'replacepeerfiles:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
   - 'replacepeerfiles:d19b4314-0267-4e95-9e63-2462a334eea1' # User Guide
   - 'saveassets:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
   - 'saveassets:d19b4314-0267-4e95-9e63-2462a334eea1' # User Guide
+  - 'saveentries:0784ad32-f952-40b1-9f6c-d0e67d502551' # User Guide
   - 'saveentries:29d88d99-dd38-43f6-9ac5-3438833c75ba' # Error 404
   - 'saveentries:408314ae-e32d-471b-a729-25f4ce759ac4' # Notice Bar
+  - 'saveentries:4b342e70-0223-4c29-9237-86a023f74f1b' # News Categories
   - 'saveentries:666b31c2-d6d5-4e80-b9aa-f57b66d5b54a' # Pages
   - 'saveentries:9c12e5ad-18e9-498f-bf50-489513409007' # News
+  - 'saveentries:ce27286a-7635-4494-9c9c-77f2d73352f4' # Fragments
   - 'savepeerassets:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
   - 'savepeerassets:d19b4314-0267-4e95-9e63-2462a334eea1' # User Guide
+  - 'savepeerentries:0784ad32-f952-40b1-9f6c-d0e67d502551' # User Guide
+  - 'savepeerentries:4b342e70-0223-4c29-9237-86a023f74f1b' # News Categories
   - 'savepeerentries:666b31c2-d6d5-4e80-b9aa-f57b66d5b54a' # Pages
   - 'savepeerentries:9c12e5ad-18e9-498f-bf50-489513409007' # News
+  - 'savepeerentries:ce27286a-7635-4494-9c9c-77f2d73352f4' # Fragments
+  - 'savepeerentrydrafts:0784ad32-f952-40b1-9f6c-d0e67d502551' # User Guide
   - 'savepeerentrydrafts:29d88d99-dd38-43f6-9ac5-3438833c75ba' # Error 404
   - 'savepeerentrydrafts:408314ae-e32d-471b-a729-25f4ce759ac4' # Notice Bar
+  - 'savepeerentrydrafts:4b342e70-0223-4c29-9237-86a023f74f1b' # News Categories
   - 'savepeerentrydrafts:666b31c2-d6d5-4e80-b9aa-f57b66d5b54a' # Pages
   - 'savepeerentrydrafts:9c12e5ad-18e9-498f-bf50-489513409007' # News
+  - 'savepeerentrydrafts:ce27286a-7635-4494-9c9c-77f2d73352f4' # Fragments
   - 'seomatic:content-meta'
   - 'seomatic:content-meta:facebook'
   - 'seomatic:content-meta:general'
@@ -54,32 +87,62 @@ permissions:
   - 'seomatic:content-meta:twitter'
   - 'seomatic:dashboard'
   - 'seomatic:global-meta'
+  - 'seomatic:global-meta:ads'
   - 'seomatic:global-meta:facebook'
   - 'seomatic:global-meta:general'
+  - 'seomatic:global-meta:humans'
   - 'seomatic:global-meta:robots'
+  - 'seomatic:global-meta:security'
   - 'seomatic:global-meta:twitter'
+  - 'seomatic:plugin-settings'
   - 'seomatic:site-settings'
+  - 'seomatic:site-settings:creator'
   - 'seomatic:site-settings:identity'
+  - 'seomatic:site-settings:miscellaneous'
   - 'seomatic:site-settings:sitemap'
   - 'seomatic:site-settings:social'
   - 'seomatic:tracking-scripts'
+  - 'seomatic:tracking-scripts:facebookpixel'
+  - 'seomatic:tracking-scripts:fathom'
   - 'seomatic:tracking-scripts:googleanalytics'
   - 'seomatic:tracking-scripts:googletagmanager'
   - 'seomatic:tracking-scripts:gtag'
+  - 'seomatic:tracking-scripts:hubspot'
+  - 'seomatic:tracking-scripts:linkedininsight'
+  - 'seomatic:tracking-scripts:matomo'
+  - 'seomatic:tracking-scripts:pinteresttag'
+  - 'seomatic:tracking-scripts:plausible'
   - 'utility:asset-indexes'
+  - 'utility:clear-caches'
   - 'utility:db-backup'
+  - 'utility:deprecation-errors'
+  - 'utility:find-replace'
+  - 'utility:migrations'
+  - 'utility:php-info'
+  - 'utility:queue-manager'
+  - 'utility:system-messages'
   - 'utility:system-report'
+  - 'utility:updates'
   - 'viewassets:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
   - 'viewassets:d19b4314-0267-4e95-9e63-2462a334eea1' # User Guide
+  - 'viewentries:0784ad32-f952-40b1-9f6c-d0e67d502551' # User Guide
   - 'viewentries:29d88d99-dd38-43f6-9ac5-3438833c75ba' # Error 404
   - 'viewentries:408314ae-e32d-471b-a729-25f4ce759ac4' # Notice Bar
+  - 'viewentries:4b342e70-0223-4c29-9237-86a023f74f1b' # News Categories
   - 'viewentries:666b31c2-d6d5-4e80-b9aa-f57b66d5b54a' # Pages
   - 'viewentries:9c12e5ad-18e9-498f-bf50-489513409007' # News
+  - 'viewentries:ce27286a-7635-4494-9c9c-77f2d73352f4' # Fragments
   - 'viewpeerassets:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
   - 'viewpeerassets:d19b4314-0267-4e95-9e63-2462a334eea1' # User Guide
+  - 'viewpeerentries:0784ad32-f952-40b1-9f6c-d0e67d502551' # User Guide
+  - 'viewpeerentries:4b342e70-0223-4c29-9237-86a023f74f1b' # News Categories
   - 'viewpeerentries:666b31c2-d6d5-4e80-b9aa-f57b66d5b54a' # Pages
   - 'viewpeerentries:9c12e5ad-18e9-498f-bf50-489513409007' # News
+  - 'viewpeerentries:ce27286a-7635-4494-9c9c-77f2d73352f4' # Fragments
+  - 'viewpeerentrydrafts:0784ad32-f952-40b1-9f6c-d0e67d502551' # User Guide
   - 'viewpeerentrydrafts:29d88d99-dd38-43f6-9ac5-3438833c75ba' # Error 404
   - 'viewpeerentrydrafts:408314ae-e32d-471b-a729-25f4ce759ac4' # Notice Bar
+  - 'viewpeerentrydrafts:4b342e70-0223-4c29-9237-86a023f74f1b' # News Categories
   - 'viewpeerentrydrafts:666b31c2-d6d5-4e80-b9aa-f57b66d5b54a' # Pages
   - 'viewpeerentrydrafts:9c12e5ad-18e9-498f-bf50-489513409007' # News
+  - 'viewpeerentrydrafts:ce27286a-7635-4494-9c9c-77f2d73352f4' # Fragments
