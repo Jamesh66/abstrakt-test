@@ -133,6 +133,11 @@
     @apply border-b border-grey-800 py-8;
   }
 
+  .header__nav .header__nav__upper svg {
+    @apply text-orange-500;
+  }
+
+
   .header__nav .header__nav__lower {
     @apply py-24;
   } 
@@ -181,8 +186,35 @@
   footer .footer__copyright ul li a {
     @apply font-text text-xs text-grey-400 underline;
   }
-
   /* end Footer */
+
+  /* Hero */
+
+  .hero .hero__container {
+    @apply flex flex-col h-full justify-center w-full z-10 pt-[7.8rem] gap-32 relative xl:w-1/2;
+  }
+
+  .hero .hero__container .hero__container_title {
+    h1 {
+      text-wrap: balance;
+    }
+  }
+
+  .hero .hero__container .hero__input  select {
+    @apply  border border-white rounded-lg bg-transparent text-white px-[1.19rem] py-[1.13rem] w-[23.9rem] text-sm font-text focus:border-orange-500  appearance-none bg-no-repeat bg-[url('/assets/images/svg/chevron-down.svg')];
+    background-position-x: 95%;
+    background-position-y: 50%;
+  }
+
+  .hero .hero__container .hero__input .hero__input__button svg {
+    @apply text-black;
+  }
+
+  .hero .hero__container .hero__input .hero__input__button svg {
+    @apply lg:hidden;
+  }
+
+  /* end Hero */
 
 }
 /* end components layer */
