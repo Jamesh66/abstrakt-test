@@ -1,4 +1,4 @@
-dateModified: 1706559720
+dateModified: 1706741670
 elementSources:
   craft\elements\Entry:
     -
@@ -76,9 +76,9 @@ fs:
     hasUrls: true
     name: Uploads
     settings:
-      path: $ASSET_BASE_PATH
+      path: public/uploads
     type: craft\fs\Local
-    url: $ASSET_BASE_URL
+    url: /public/uploads
   userGuide:
     hasUrls: true
     name: 'User Guide'
@@ -90,12 +90,12 @@ meta:
   __names__:
     1a78d395-d81a-4b77-8da7-30a49123bbee: English # English
     01d20550-63a0-4d7a-ad9b-5a130e8f55a8: 'Section Title' # Section Title
+    1decb9b9-eac4-4ba1-8818-a3ab5fbe6fb2: 'Highlighted Content' # Highlighted Content
     2b01b0d7-0c08-4e47-8041-e2b6a7fc855b: Caption # Caption
     2fcd48d2-b2b1-479f-9015-016904e4eab4: 'Craft Starter' # Craft Starter
     3b9496a7-4539-4c28-91bc-3e51c68f4187: Embed # Embed
     3e09420e-30db-49dd-9520-4775f6667303: 'Site Basic' # Site Basic
     4b342e70-0223-4c29-9237-86a023f74f1b: 'News Categories' # News Categories
-    4d4435a9-cff2-46e6-9e43-ca2b7d62486f: Button # Button
     5bca37e0-a30f-48fd-9fde-3105fb9d9738: 'Notice Bar' # Notice Bar
     5bed279a-5360-4e96-b92e-3153c98bff40: 'Section Title' # Section Title
     6adad598-392d-4158-9400-8f90f7fe1fb0: 'Section Subtitle' # Section Subtitle
@@ -107,6 +107,7 @@ meta:
     12c7de12-987a-4aa4-890f-ec5cde880851: 'Fallback Image' # Fallback Image
     12f17257-6f1c-4e4c-837e-17ad76241a60: Site # Site
     14e1bd82-34c0-42c5-a72d-1d002d9775d2: 'Video Title' # Video Title
+    19cafa0b-1c32-4183-ba77-5a7afa70b733: 'Image Content Image' # Image Content Image
     25e2157e-9a82-41cd-970f-4fc58cb3a835: Screenshots # Screenshots
     29d88d99-dd38-43f6-9ac5-3438833c75ba: 'Error 404' # Error 404
     48d0d0b8-2e48-4232-8b09-a401c6493902: Fragments # Fragments
@@ -178,7 +179,9 @@ meta:
     da3d7ec4-1d85-47ba-a517-6c81d94cc9d2: Copy # Copy
     dbff8535-c8bd-4629-bc58-732972504e1b: 'Alt Text' # Alt Text
     de5a59b9-8f12-4d5c-b5ad-82e0be0a2df1: James # James
+    de61de21-406b-4a4f-9281-831469b051b6: 'Secondary Button' # Secondary Button
     e3dea9df-426f-43a5-96fd-927882533aa9: 'News Listing' # News Listing
+    e49b8e06-a410-4065-b9c9-b5cd6b868818: 'Image Content' # Image Content
     e285fc8c-8b64-4829-afe0-88f9d0c3c8c4: 'Section Title' # Section Title
     ea7fe716-adee-4200-a8ca-15362418cd97: Home # Home
     ef8cc244-dfa8-41b1-945d-cb673ae71824: Common # Common
@@ -186,6 +189,8 @@ meta:
     f03239f9-af65-481a-b6b8-76e0e158244f: Caption # Caption
     f4da8483-be1a-439d-8918-afde0ea14454: Text # Text
     f90a85bd-91b2-462b-acb4-8f265ded647e: Copy # Copy
+    fa5642e9-a479-4dc8-9a17-47878bc78dc8: 'Image Content Content' # Image Content Content
+    fab7458d-9f37-4154-aaaf-31a44ea42fbf: 'Primary Button' # Primary Button
     fbdde691-0df2-4e8e-b1a8-61a1f555fd0e: 'News Categories' # News Categories
 plugins:
   assetrev:

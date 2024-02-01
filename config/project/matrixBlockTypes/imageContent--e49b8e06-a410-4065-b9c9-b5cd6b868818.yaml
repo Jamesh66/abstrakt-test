@@ -1,0 +1,292 @@
+field: 77af5a62-d057-494a-91ac-9edf65b6b266 # Content Builder
+fieldLayouts:
+  159638cc-dcec-4093-a700-7bc8f6715e29:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 19cafa0b-1c32-4183-ba77-5a7afa70b733 # Image Content Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7244513a-b995-4c99-8c52-fbf607493f40
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1decb9b9-eac4-4ba1-8818-a3ab5fbe6fb2 # Highlighted Content
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d9667070-bebf-4d36-a75c-ede230bfe567
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: fa5642e9-a479-4dc8-9a17-47878bc78dc8 # Image Content Content
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e9de4c38-a31f-4195-a043-a2b7faa101f7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: fab7458d-9f37-4154-aaaf-31a44ea42fbf # Primary Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6a81e354-a271-4ee6-aa69-3b59c4ef3e80
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: de61de21-406b-4a4f-9281-831469b051b6 # Secondary Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7a7f49e6-ccb5-48f1-832e-0744c1c1fca7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d9e3cdfc-1cf7-414d-affd-ad447d3dd8e9
+        userCondition: null
+fields:
+  1decb9b9-eac4-4ba1-8818-a3ab5fbe6fb2: # Highlighted Content
+    columnSuffix: hrkjczxi
+    contentColumnType: text
+    fieldGroup: null
+    handle: highlightedContent
+    instructions: null
+    name: 'Highlighted Content'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  19cafa0b-1c32-4183-ba77-5a7afa70b733: # Image Content Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: imageContentImage
+    instructions: null
+    name: 'Image Content Image'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:70f5d47b-4830-4d51-95fe-bc0f7ccc0670' # Uploads
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  de61de21-406b-4a4f-9281-831469b051b6: # Secondary Button
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: secondaryButton
+    instructions: null
+    name: 'Secondary Button'
+    searchable: false
+    settings:
+      allowCustomText: true
+      allowTarget: false
+      autoNoReferrer: false
+      customTextMaxLength: 0
+      customTextRequired: false
+      defaultLinkName: asset
+      defaultText: ''
+      enableAllLinkTypes: true
+      enableAriaLabel: false
+      enableElementCache: false
+      enableTitle: false
+      typeSettings:
+        asset:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        category:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        custom:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        email:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        entry:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        site:
+          enabled: false
+          sites: '*'
+        tel:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        url:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        user:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+    translationKeyFormat: null
+    translationMethod: none
+    type: lenz\linkfield\fields\LinkField
+  fa5642e9-a479-4dc8-9a17-47878bc78dc8: # Image Content Content
+    columnSuffix: hbxqjlxn
+    contentColumnType: text
+    fieldGroup: null
+    handle: imagecontentcontent
+    instructions: null
+    name: 'Image Content Content'
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      ckeConfig: 170a124d-5ba5-43f5-a663-8f85be97b38b # Default
+      columnType: text
+      defaultTransform: null
+      enableSourceEditingForNonAdmins: false
+      purifierConfig: null
+      purifyHtml: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      showWordCount: true
+      wordLimit: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\ckeditor\Field
+  fab7458d-9f37-4154-aaaf-31a44ea42fbf: # Primary Button
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: primaryButton
+    instructions: null
+    name: 'Primary Button'
+    searchable: false
+    settings:
+      allowCustomText: true
+      allowTarget: false
+      autoNoReferrer: false
+      customTextMaxLength: 0
+      customTextRequired: false
+      defaultLinkName: asset
+      defaultText: ''
+      enableAllLinkTypes: true
+      enableAriaLabel: false
+      enableElementCache: false
+      enableTitle: false
+      typeSettings:
+        asset:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        category:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        custom:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        email:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        entry:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        site:
+          enabled: false
+          sites: '*'
+        tel:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        url:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        user:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+    translationKeyFormat: null
+    translationMethod: none
+    type: lenz\linkfield\fields\LinkField
+handle: imageContent
+name: 'Image Content'
+sortOrder: 7

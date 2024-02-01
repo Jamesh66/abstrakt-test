@@ -64,8 +64,16 @@
     @apply text-white bg-[#2d2828] left-[5px] top-[50px] min-w-[200px] text-center my-[10px] mx-[5px] p-[10px] text-base z-[999] no-underline border border-black;
   }
 
-  .btn {
-    @apply inline-block px-6 py-1 text-white transition duration-200 bg-gray-400 hover:bg-gray-300 hover:text-gray-700;
+  .button {
+    @apply inline-block text-sm w-fit font-text rounded-lg px-20 py-20 md:px-[1.875rem];
+  }
+
+  .button-primary {
+    @apply bg-orange-500 text-black;
+  }
+
+  .button-secondary {
+    @apply border border-white text-white;
   }
 
   /* padding used in matrix blocks */
@@ -201,13 +209,9 @@
   }
 
   .hero .hero__container .hero__input  select {
-    @apply  border border-white rounded-lg bg-transparent text-white px-[1.19rem] py-[1.13rem] w-[23.9rem] text-sm font-text focus:border-orange-500  appearance-none bg-no-repeat bg-[url('/assets/images/svg/chevron-down.svg')];
+    @apply  border border-white rounded-lg bg-transparent text-white px-[1.19rem] py-[1.13rem] w-[23.9rem] md:w-[31.1875rem] text-sm font-text md:text-base focus:border-orange-500  appearance-none bg-no-repeat bg-[url('/assets/images/svg/chevron-down.svg')];
     background-position-x: 95%;
     background-position-y: 50%;
-  }
-
-  .hero .hero__container .hero__input .hero__input__button svg {
-    @apply text-black;
   }
 
   .hero .hero__container .hero__input .hero__input__button svg {
@@ -216,5 +220,19 @@
 
   /* end Hero */
 
+  /* Image content */
+
+  .image-content .image-content__circle--top svg {
+    @apply w-[408px] h-[408px];
+  }
+
+  .image-content .image-content__circle--middle svg {
+    @apply w-[408px] h-[408px];
+  }
+
+  .image-content .image-content__circle--bottom svg {
+    @apply w-[608px] h-[608px];
+  }
+  /* Image content end */
 }
 /* end components layer */

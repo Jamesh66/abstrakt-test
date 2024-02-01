@@ -1,0 +1,39 @@
+{# use block layout #}
+{% extends '_blocks/_layout' %}
+
+{# section background #}
+{% set background = 'bg-black' %}
+
+{% block body %}
+  <div class="image-content py-[1.5rem] relative grid grid-cols-6 lg:grid-cols-12 gap-[2.3rem]">
+    <div class="image-content__circle--top absolute top-[12px] left-[338px]">
+    {{ svg('@webroot/assets/images/svg/circle.svg')}}
+    </div>
+    <div class="image-content__circle--middle absolute top-[200px] left-[150px]">
+    {{ svg('@webroot/assets/images/svg/circle.svg') }}
+    </div>
+    <div class="image-content__circle--bottom absolute top-[200px] left-[-217px]">
+    {{ svg('@webroot/assets/images/svg/circle.svg') }}
+    </div>
+    <div class="image-content__image col-start-1 col-span-6 lg:col-span-4 lg:grid-cols-4 row-start-1 relative">
+      <picture>
+        <img src="{{ url('/assets/images/street.png') }}" class="" alt="Street">
+      </picture>
+    </div>
+    <div class="image-content__content flex flex-col gap-[2.5rem] col-start-1 col-span-6 lg:grid-cols-4 lg:col-start-6 lg:my-auto">
+      {% if block.highlightedContent|length %}
+      <p class="text-white font-bold font-text lg:text-xl">{{ block.highlightedContent }}</p>
+      {% endif %}
+      {% if block.imagecontentcontent|length %}
+      <div class="text-grey-300 text-sm md:text-lg font-extralight flex flex-col gap-[2.5rem] lg:text-lg">
+        {{ block.imagecontentcontent }}
+      </div>  
+      {% endif %}
+      <div class="image-content__content__button-group flex flex-col lg:flex-row gap-5">
+        <a class="button button-primary" href="/">Our businesses</a>
+        <a class="button button-secondary" href="/">Contact us</a>
+      </div> 
+    </div><!-- /.flex flex-row -->
+  </div><!-- end container-->
+
+{% endblock %}

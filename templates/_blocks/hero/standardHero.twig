@@ -3,7 +3,7 @@
     <picture>
       <source media="(min-width:650px)" srcset="{{ url('/assets/images/hero.png') }}">
       <source media="(min-width:465px)" srcset="{{ url('/assets/images/hero-mobile.png') }}">
-      <img src="{{ url('/assets/images/hero-mobile.png') }}" class="absolute w-full h-full in object-cover after:" alt="Hero Image">
+      <img src="{{ url('/assets/images/hero-mobile.png') }}" class="absolute w-full h-full object-cover" alt="Hero Image">
     </picture>
     {# hero content #}
     <div class="container hero__container">
@@ -21,25 +21,8 @@
             <option value="Option thre">Option three</option>
             <option value="Option four">Option four</option> 
           </select>
-          <a href="" class="hero__input__button text-base font-text bg-orange-500 rounded-lg px-20 py-20 md:px-[1.875rem]"><span>{{svg('@webroot/assets/images/svg/search.svg')}}</span><span class="hidden lg:block">Search</span></a>
+          <a href="" class="hero__input__button button button-primary"><span>{{svg('@webroot/assets/images/svg/search.svg')}}</span><span class="hidden lg:block">Search</span></a>
         </div>
     </div><!-- /.container --> 
   {# end hero content #}
 </div>
-
-
-    {# <div class="container relative z-10 h-full">
-      <div class="flex flex-col justify-center w-full h-full gap-8 lg:w-1/2">
-        <h1>{{ block.heroTitle ?? entry.title }}</h1>
-        {% if block.copy|length %}
-          <div class="prose prose-lg">
-            {{ block.copy }}
-          </div><!-- /.prose -->
-        {% endif %}
-
-        {{ block.button.getLink({
-          class: 'btn self-start',
-        }) }}
-
-      </div><!-- /.flex flex-col lg:flex-row -->
-    </div><!-- /.container --> #}
