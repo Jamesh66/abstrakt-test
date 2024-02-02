@@ -2,8 +2,8 @@
 {% set background = background ?? 'bg-white' %}
 
 <section
-  class="{{ block.padding.value ?? 'section-y-padding' }} {{ background }} @container">
-  <div class="container">
+  class="{{ block.padding.value ?? 'section-y-padding' }} {{ background }} @container overflow-hidden">
+  <div>
 
     {% block body %}{% endblock %}
 

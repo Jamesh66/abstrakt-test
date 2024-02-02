@@ -223,7 +223,7 @@
   /* Image content */
 
   .image-content .image-content__circle--top svg {
-    @apply w-[408px] h-[408px];
+    @apply h-[700px] lg:h-[1005px];
   }
 
   .image-content .image-content__circle--middle svg {
@@ -231,8 +231,38 @@
   }
 
   .image-content .image-content__circle--bottom svg {
-    @apply w-[608px] h-[608px];
+    @apply h-[1000px];
   }
   /* Image content end */
+
+  /* Carousel */
+
+  .carousel__buttons__button--left svg {
+    @apply rotate-180;
+  }
+
+  .carousel .carousel__circle--top svg {
+    @apply max-h-[400px] max-w-[400px] lg:max-h-[600x] lg:max-w-[600x];
+  }
+
+  .carousel .carousel__circle--bottom svg {
+    @apply max-h-[400px] max-w-[400px] lg:max-h-[600x] lg:max-w-[600x];
+  }
+
+
+  .carousel__buttons__button--left {
+    @apply rounded-l-lg rounded-r-none border-r border-black pl-[1.375rem] pr-[1.375rem] max-h-[3.75rem] flex items-center hover:opacity-50;
+  }
+
+  .carousel__buttons__button--right {
+    @apply rounded-r-lg rounded-l-none pl-[1.375rem] pr-[1.375rem] max-h-[3.75rem] flex items-center hover:opacity-50;
+  }
+
+  .carousel .carousel__carousel .swiper-wrapper .swiper-slide {
+    @apply mx-auto;
+  }
+
+
+  /* carousel end  */
 }
 /* end components layer */

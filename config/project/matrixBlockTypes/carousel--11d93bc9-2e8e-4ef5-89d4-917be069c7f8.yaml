@@ -1,0 +1,46 @@
+field: 77af5a62-d057-494a-91ac-9edf65b6b266 # Content Builder
+fieldLayouts:
+  993f4d95-2394-401d-a424-fc9592b3bcac:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 7b36334f-56aa-4ba6-ab22-e74a0c006672 # Carousel Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 04c84ce8-d5e9-43f8-9f80-17f5bad95ce4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 8b3c7b52-630f-4c2d-9826-af0b5f3833d2
+        userCondition: null
+fields:
+  7b36334f-56aa-4ba6-ab22-e74a0c006672: # Carousel Text
+    columnSuffix: qlfqlbaf
+    contentColumnType: text
+    fieldGroup: null
+    handle: carouselText
+    instructions: null
+    name: 'Carousel Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: carousel
+name: Carousel
+sortOrder: 8

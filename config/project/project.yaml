@@ -1,4 +1,4 @@
-dateModified: 1706741670
+dateModified: 1706820472
 elementSources:
   craft\elements\Entry:
     -
@@ -100,10 +100,12 @@ meta:
     5bed279a-5360-4e96-b92e-3153c98bff40: 'Section Title' # Section Title
     6adad598-392d-4158-9400-8f90f7fe1fb0: 'Section Subtitle' # Section Subtitle
     6f74be98-1b1b-470e-a96a-727b01e0b225: 'Video Upload' # Video Upload
+    7b36334f-56aa-4ba6-ab22-e74a0c006672: 'Carousel Text' # Carousel Text
     7bf7da79-8f7d-4a1b-8129-121b24c0d99b: Image # Image
     8a60bb9d-8e34-4487-b809-65134adc6fa1: Padding # Padding
     8c583e9a-a56d-486d-8550-e7eae61c8088: Slides # Slides
     9c12e5ad-18e9-498f-bf50-489513409007: News # News
+    11d93bc9-2e8e-4ef5-89d4-917be069c7f8: Carousel # Carousel
     12c7de12-987a-4aa4-890f-ec5cde880851: 'Fallback Image' # Fallback Image
     12f17257-6f1c-4e4c-837e-17ad76241a60: Site # Site
     14e1bd82-34c0-42c5-a72d-1d002d9775d2: 'Video Title' # Video Title

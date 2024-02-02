@@ -1,0 +1,68 @@
+{# use block layout #}
+{% extends '_blocks/_layout' %}
+
+{# section background #}
+{% set background = 'bg-orange-50' %}
+
+{% block body %}
+
+  <div class="carousel flex flex-col gap-[2rem] lg:gap-[6rem] py-[1rem] lg:py-[5.9rem] relative">
+    <div class="carousel__circle--top absolute top-[-50%] left-[-70%] lg:top-[-100%] lg:left-[-30%]">
+    {{ svg('@webroot/assets/images/svg/circle.svg')}}
+    </div>
+    <div class="carousel__circle--bottom absolute top-[-50%] right-[70%]">
+    {{ svg('@webroot/assets/images/svg/circle.svg') }}
+    </div>
+    <div class="carousel__content container flex justify-between">
+      {% if block.carouselText|length %}
+        <div class="carousel__body font-extralight text-black font-lighter text-lg lg:text-5xl max-w-[47rem]">
+          {{ block.carouselText }}
+        </div><!-- /carousel Text-->
+      {% endif %}
+      <div class="carousel__buttons hidden md:flex gap-0">
+        <a href="" class="carousel__buttons__button--left button button-primary">{{ svg('@webroot/assets/images/svg/arrow.svg') }}</a>
+        <a href="" class="carousel__buttons__button--right button button-primary next">{{ svg('@webroot/assets/images/svg/arrow.svg') }}</a>
+      </div> 
+    </div>
+    <div class="carousel__carousel w-full js-carousel swiper">
+      <div class="swiper-wrapper">
+        <div class="relative swiper-slide">
+          <picture>
+            <img src="{{ url('/assets/images/lbt.png') }}" alt="">
+          </picture>
+        </div>
+        <div class="relative swiper-slide">
+          <picture>
+            <img src="{{ url('/assets/images/alfiam.png') }}" alt="">
+          </picture>
+        </div>
+        <div class="relative swiper-slide">
+          <picture>
+            <img src="{{ url('/assets/images/apex-brick.png') }}" alt="">
+          </picture>
+        </div>
+        <div class="relative swiper-slide">
+          <picture>
+            <img src="{{ url('/assets/images/architectural.png') }}" alt="">
+          </picture>
+        </div>
+        <div class="relative swiper-slide">
+          <picture>
+            <img src="{{ url('/assets/images/brickability.png') }}" alt="">
+          </picture>
+        </div>
+        <div class="relative swiper-slide">
+          <picture>
+            <img src="{{ url('/assets/images/brick.png') }}" alt="">
+          </picture>
+        </div>
+      </div>
+    </div>  
+  </div><!-- end container-->
+
+  {# javascript #}
+{% js %}
+  {% include "_javascript/carousel-swiper.js" %}
+{% endjs %}
+
+{% endblock %} 
