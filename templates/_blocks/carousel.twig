@@ -6,7 +6,7 @@
 
 {% block body %}
 
-  <div class="carousel flex flex-col gap-[2rem] lg:gap-[6rem] py-[1rem] lg:py-[5.9rem] relative">
+  <div class="carousel flex flex-col gap-[2rem] lg:gap-[6rem] py-[1rem] lg:py-[5.9rem] relative overflow-hidden">
     <div class="carousel__circle--top absolute top-[-50%] left-[-70%] lg:top-[-100%] lg:left-[-30%]">
     {{ svg('@webroot/assets/images/svg/circle.svg')}}
     </div>
@@ -15,16 +15,16 @@
     </div>
     <div class="carousel__content container flex justify-between">
       {% if block.carouselText|length %}
-        <div class="carousel__body font-extralight text-black font-lighter text-lg lg:text-5xl max-w-[47rem]">
+        <h4 class="carousel__body font-extralight text-black font-lighter text-lg lg:text-5xl max-w-[47rem]">
           {{ block.carouselText }}
-        </div><!-- /carousel Text-->
+        </h4><!-- /carousel Text-->
       {% endif %}
       <div class="carousel__buttons hidden md:flex gap-0">
         <a href="" class="carousel__buttons__button--left button button-primary">{{ svg('@webroot/assets/images/svg/arrow.svg') }}</a>
         <a href="" class="carousel__buttons__button--right button button-primary next">{{ svg('@webroot/assets/images/svg/arrow.svg') }}</a>
       </div> 
     </div>
-    <div class="carousel__carousel w-full js-carousel swiper">
+    <div class="carousel__carousel w-full js-carousel swiper pb-[5.3rem]">
       <div class="swiper-wrapper">
         <div class="relative swiper-slide">
           <picture>

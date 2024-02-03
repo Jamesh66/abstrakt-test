@@ -1125,6 +1125,100 @@ footer .footer__copyright ul li a {
   margin-right: auto;
 }
 /* carousel end  */
+/* Newsletter Signup */
+.newsletter .newsletter__content .newsletter__content__form .form__input input[type=text] {
+  width: 100%;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  background-color: transparent;
+  padding-left: 1.19rem;
+  padding-right: 1.19rem;
+  padding-top: 1.13rem;
+  padding-bottom: 1.13rem;
+  font-family: halyard-text, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.newsletter .newsletter__content .newsletter__content__form .form__input input[type=text]:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 125 23 / var(--tw-border-opacity));
+}
+@media (min-width: 768px) {
+
+  .newsletter .newsletter__content .newsletter__content__form .form__input input[type=text] {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+.newsletter .newsletter__content .newsletter__content__form .form__input input[type=text]::-webkit-input-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.newsletter .newsletter__content .newsletter__content__form .form__input input[type=text]::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.newsletter .newsletter__content .newsletter__content__form .form__input input[type=text]:-ms-input-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.newsletter .newsletter__content .newsletter__content__form .form__input input[type=text]::-ms-input-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.newsletter .newsletter__content .newsletter__content__form .form__input input[type=text]::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.newsletter .newsletter__background-image svg {
+  height: 100%;
+}
+.newsletter .newsletter__background-image--circle svg {
+  height: 2000px;
+  width: 2000px;
+}
+.newsletter .newsletter__background-image {
+  top: 0px;
+  bottom: 0px;
+  left: -50px;
+}
+.newsletter .newsletter__background-image--circle {
+  top: -1000px;
+  left: -1000px;
+}
+.newsletter .newsletter__content h5 {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+@media (min-width: 1024px) {
+
+  .newsletter .newsletter__content h5 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+}
+.newsletter .newsletter__content p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+@media (min-width: 1024px) {
+
+  .newsletter .newsletter__content p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+/* Newsletter Signup end */
 
 .sr-only {
   position: absolute;
@@ -1178,20 +1272,20 @@ footer .footer__copyright ul li a {
   left: -450px;
 }
 
-.left-\[150px\] {
-  left: 150px;
+.left-\[-70\%\] {
+  left: -70%;
 }
 
-.left-\[26\%\] {
-  left: 26%;
+.left-\[150px\] {
+  left: 150px;
 }
 
 .right-2 {
   right: 0.125rem;
 }
 
-.right-\[-40\%\] {
-  right: -40%;
+.right-\[70\%\] {
+  right: 70%;
 }
 
 .top-0 {
@@ -1212,26 +1306,6 @@ footer .footer__copyright ul li a {
 
 .top-\[210px\] {
   top: 210px;
-}
-
-.top-\[50\%\] {
-  top: 50%;
-}
-
-.left-\[-50\%\] {
-  left: -50%;
-}
-
-.left-\[-80\%\] {
-  left: -80%;
-}
-
-.left-\[-70\%\] {
-  left: -70%;
-}
-
-.right-\[70\%\] {
-  right: 70%;
 }
 
 .z-0 {
@@ -1361,6 +1435,10 @@ footer .footer__copyright ul li a {
   margin-top: 0.5rem;
 }
 
+.mt-\[-8\.06rem\] {
+  margin-top: -8.06rem;
+}
+
 .block {
   display: block;
 }
@@ -1467,6 +1545,11 @@ footer .footer__copyright ul li a {
           flex-grow: 1;
 }
 
+.basis-\[28\%\] {
+  -ms-flex-preferred-size: 28%;
+      flex-basis: 28%;
+}
+
 .translate-y-0 {
   --tw-translate-y: 0px;
   -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1557,6 +1640,11 @@ footer .footer__copyright ul li a {
           justify-content: space-between;
 }
 
+.justify-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .gap-0 {
   gap: 0px;
 }
@@ -1591,6 +1679,18 @@ footer .footer__copyright ul li a {
 
 .gap-\[1\.25rem\] {
   gap: 1.25rem;
+}
+
+.gap-\[1\.4rem\] {
+  gap: 1.4rem;
+}
+
+.gap-\[1\.5rem\] {
+  gap: 1.5rem;
+}
+
+.gap-\[2\.1rem\] {
+  gap: 2.1rem;
 }
 
 .gap-\[2\.3rem\] {
@@ -1711,6 +1811,11 @@ footer .footer__copyright ul li a {
 .bg-grey {
   --tw-bg-opacity: 1;
   background-color: rgb(179 179 179 / var(--tw-bg-opacity));
+}
+
+.bg-grey-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 31 31 / var(--tw-bg-opacity));
 }
 
 .bg-orange-200 {
@@ -1844,14 +1949,23 @@ footer .footer__copyright ul li a {
   padding-bottom: 0.5rem;
 }
 
-.py-\[1\.5rem\] {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+.py-\[1\.9rem\] {
+  padding-top: 1.9rem;
+  padding-bottom: 1.9rem;
 }
 
 .py-\[1rem\] {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-\[6\.5rem\] {
+  padding-top: 6.5rem;
+  padding-bottom: 6.5rem;
+}
+
+.pb-\[5\.3rem\] {
+  padding-bottom: 5.3rem;
 }
 
 .pl-0 {
@@ -1868,6 +1982,14 @@ footer .footer__copyright ul li a {
 
 .pt-8 {
   padding-top: 0.5rem;
+}
+
+.pb-\[1\.43rem\] {
+  padding-bottom: 1.43rem;
+}
+
+.pb-\[\] {
+  padding-bottom: ;
 }
 
 .text-center {
@@ -2261,6 +2383,11 @@ footer .footer__copyright ul li a {
     margin-bottom: auto;
   }
 
+  .lg\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .lg\:mb-0 {
     margin-bottom: 0px;
   }
@@ -2349,8 +2476,17 @@ footer .footer__copyright ul li a {
             justify-content: space-between;
   }
 
+  .lg\:gap-\[2rem\] {
+    gap: 2rem;
+  }
+
   .lg\:gap-\[6rem\] {
     gap: 6rem;
+  }
+
+  .lg\:py-\[4\.5rem\] {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
   }
 
   .lg\:py-\[5\.9rem\] {

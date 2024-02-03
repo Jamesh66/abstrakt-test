@@ -65,6 +65,18 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 9a5f07c6-3046-4586-820e-7a15f85f2d73 # Padding
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 037388bb-e574-452f-b455-903e8c138890
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: d9e3cdfc-1cf7-414d-affd-ad447d3dd8e9
         userCondition: null
@@ -89,6 +101,64 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
+  9a5f07c6-3046-4586-820e-7a15f85f2d73: # Padding
+    columnSuffix: lvosvztw
+    contentColumnType: string(18)
+    fieldGroup: null
+    handle: padding
+    instructions: null
+    name: Padding
+    searchable: false
+    settings:
+      columnType: null
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 'Top & bottom'
+            -
+              - value
+              - section-y-padding
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Top Only'
+            -
+              - value
+              - section-t-padding
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Bottom Only'
+            -
+              - value
+              - section-b-padding
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'No Padding'
+            -
+              - value
+              - section-no-padding
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
   19cafa0b-1c32-4183-ba77-5a7afa70b733: # Image Content Image
     columnSuffix: null
     contentColumnType: string

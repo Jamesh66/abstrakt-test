@@ -1,0 +1,78 @@
+field: 77af5a62-d057-494a-91ac-9edf65b6b266 # Content Builder
+fieldLayouts:
+  4bb4c4bb-4ccc-45ed-a3aa-32dcfcf2591f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 77489d14-71f4-4e63-b348-755e06a13faa # Newsletter Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 66db375f-5c91-4adb-b586-dd0dd26ecfd2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 88c8fd6b-f398-479d-868e-f4aea39faf25 # Newsletter Content
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3f520506-f094-43f8-ab94-ae69588e3828
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: ef9aeaaa-4e63-4d23-ad2d-eca028143ecc
+        userCondition: null
+fields:
+  88c8fd6b-f398-479d-868e-f4aea39faf25: # Newsletter Content
+    columnSuffix: qfjievfy
+    contentColumnType: text
+    fieldGroup: null
+    handle: newsletterContent
+    instructions: null
+    name: 'Newsletter Content'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  77489d14-71f4-4e63-b348-755e06a13faa: # Newsletter Title
+    columnSuffix: udjuyyzi
+    contentColumnType: text
+    fieldGroup: null
+    handle: newsletterTitle
+    instructions: null
+    name: 'Newsletter Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: newsletterSignUp
+name: 'Newsletter Sign Up'
+sortOrder: 9
