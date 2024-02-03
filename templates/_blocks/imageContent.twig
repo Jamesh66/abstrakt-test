@@ -16,9 +16,7 @@
     {{ svg('@webroot/assets/images/svg/circle.svg') }}
     </div>
     <div class="image-content__image col-start-1 col-span-6 lg:col-span-4 lg:grid-cols-4 row-start-1 relative">
-      <picture>
         <img src="{{ url('/assets/images/street.png') }}" alt="Street">
-      </picture>
     </div>
     <div class="image-content__content flex flex-col gap-[2.5rem] col-start-1 col-span-6 lg:grid-cols-4 lg:col-start-6 lg:my-auto z-[1]">
       {% if block.highlightedContent|length %}

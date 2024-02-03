@@ -18,9 +18,9 @@
         {{ svg('@webroot/assets/images/svg/circle.svg') }}
       </div>
 
-      <div class="newsletter__content relative z-10 py-[1.9rem] lg:py-[4.5rem] flex flex-col lg:flex-row items-center justify-around">
+      <div class="newsletter__content relative z-10 py-[1.9rem] lg:py-[4.5rem] grid grid-cols-6 grid-rows-2">
 
-        <div class="newsletter__content__content pb-[1.43rem] basis-[28%] flex flex-col gap-[1.4rem] lg:gap-[2rem]">
+        <div class="newsletter__content__content col-span-full row-span-1  pb-[1.43rem] flex flex-col gap-[1.4rem] lg:gap-[2rem]">
           {% if block.newsletterTitle|length %}
             <h5>{{ block.newsletterTitle }}</h5>
           {% endif %}
@@ -30,7 +30,7 @@
           {% endif %}
         </div>
 
-        <form class="newsletter__content__form flex flex-col gap-[2.1rem]" action="">
+        <form class="newsletter__content__form row-start-2 col-span-6 flex flex-col gap-[2.1rem]" action="">
           <div class="form__input flex flex-col lg:flex-row gap-[1.5rem]">
             <input type="text" name="" id="" placeholder="Your email address">
             <a class="button mx-auto lg:mx-0 button-primary" href="">Sign Up</a>
