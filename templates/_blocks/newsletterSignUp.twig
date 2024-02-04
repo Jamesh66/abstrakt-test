@@ -8,7 +8,7 @@
 
   <div class="container">
 
-    <div class="newsletter container rounded-lg bg-grey-950 relative overflow-hidden mt-[-8.06rem]">
+    <div class="newsletter px-[1.3rem] lg:px-0 rounded-lg bg-grey-950 relative overflow-hidden mt-[-8.06rem]">
 
       <div class="newsletter__background-image absolute">
         {{ svg('@webroot/assets/images/svg/background.svg') }}
@@ -18,9 +18,9 @@
         {{ svg('@webroot/assets/images/svg/circle.svg') }}
       </div>
 
-      <div class="newsletter__content relative z-10 py-[1.9rem] lg:py-[4.5rem] grid grid-cols-6 grid-rows-2">
+      <div class="newsletter__content relative z-10 py-[1.9rem] lg:py-[4.5rem] grid grid-cols-6 lg:grid-cols-12 md:gap-[2rem] auto-rows-auto">
 
-        <div class="newsletter__content__content col-span-full row-span-1  pb-[1.43rem] flex flex-col gap-[1.4rem] lg:gap-[2rem]">
+        <div class="newsletter__content__content col-span-full row-span-1 lg:col-start-2 lg:col-span-4  pb-[1.43rem] lg:pb-0 flex flex-col gap-[1.4rem] lg:gap-[2rem]">
           {% if block.newsletterTitle|length %}
             <h5>{{ block.newsletterTitle }}</h5>
           {% endif %}
@@ -30,14 +30,16 @@
           {% endif %}
         </div>
 
-        <form class="newsletter__content__form row-start-2 col-span-6 flex flex-col gap-[2.1rem]" action="">
-          <div class="form__input flex flex-col lg:flex-row gap-[1.5rem]">
+        <form class="newsletter__content__form row-start-2 col-span-6 lg:col-start-7 lg:row-start-1 flex flex-col gap-[1.5rem] lg:gap-[2rem]" action="">
+          <div class="newsletter__content__form__text__input flex flex-col xl:flex-row gap-[1.5rem]">
             <input type="text" name="" id="" placeholder="Your email address">
-            <a class="button mx-auto lg:mx-0 button-primary" href="">Sign Up</a>
+            <a class="button ml-[1.875rem] lg:mx-0 button-primary" href="">Sign Up</a>
           </div>
           <div class="form__checkbox">
-            <input type="checkbox" name="newsletter" id="newsletter">
-            <label class="text-base text-white font" for="newsletter">I consent to being sent email updates about my interests.</label>
+            <label class="form__checkbox__container" for="newsletter">I consent to being sent email updates about my interests.
+              <input type="checkbox" name="newsletter" id="newsletter">
+              <span class="form__checkbox__checkmark"></span>
+            </label>
           </div>
         </form>
 

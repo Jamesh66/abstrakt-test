@@ -69,11 +69,15 @@
   }
 
   .button-primary {
-    @apply bg-orange-500 text-black;
+    @apply bg-orange-500 z-[1] relative overflow-hidden text-white hover:text-orange-500 hover:no-underline before:absolute before:-inset-0 before:bg-white before:z-[-1] before:w-0 hover:before:w-full before:transition-all before:duration-200;
   }
 
   .button-secondary {
-    @apply border border-white text-white;
+    @apply border border-white text-white z-[1] relative overflow-hidden hover:text-black hover:no-underline before:absolute before:-inset-0 before:bg-white before:z-[-1] before:w-0 hover:before:w-full before:transition-all before:duration-200;
+  }
+
+  .button-minor {
+    @apply text-white hover:before:scale-x-100 hover:before:origin-left relative w-fit before:w-full before:h-1 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-orange-400 before:absolute before:left-0 before:bottom-0 hover:text-orange-400;
   }
 
   /* padding used in matrix blocks */
@@ -126,7 +130,7 @@
   }
 
   nav .nav__lower__burger {
-    @apply w-[44px] h-[44px] flex flex-col gap-[5px] items-end justify-center lg:hidden;
+    @apply w-[44px] h-[44px] flex flex-col gap-[5px] items-end justify-center lg:hidden z-20 cursor-pointer;
   }
 
   nav .header__nav {
@@ -145,17 +149,35 @@
     @apply text-orange-500;
   }
 
-
   .header__nav .header__nav__lower {
     @apply py-24;
   } 
 
+  nav .header__nav .header__nav__link a{
+    @apply font-bold font-text flex items-center gap-[7px] ;
+  }
 
-  nav .header__nav .header__nav__link  a{
-    @apply font-bold font-text text-white flex items-center gap-[7px];
+  /* side Nav  */
+
+  .side-nav .side-nav__sub-nav svg {
+    @apply text-orange-400;
+  }
+
+  .side-nav .side-nav__menu .side-nav__menu__link  a {
+    @apply font-bold font-text flex items-center gap-[7px];
+  }
+
+  .side-nav .side-nav__sub-menu ul li {
+    @apply font-text text-xs p-0 text-grey-300 md:text-base; 
+  }
+
+  .side-nav .side-nav__burger {
+    @apply w-[44px] h-[44px] flex flex-col gap-[5px] items-end justify-center lg:hidden z-20 absolute right-[1.375rem] cursor-pointer;
   }
   
-  /* end nav */
+  /* end side nav */
+
+  /* end nav */ 
 
   /* Footer */
   
@@ -249,13 +271,17 @@
     @apply max-h-[400px] max-w-[400px] lg:max-h-[600x] lg:max-w-[600x];
   }
 
+  .carousel .carousel__buttons .carousel-button {
+    @apply bg-orange-500 hover:opacity-50 pl-[1.375rem] pr-[1.375rem] max-h-[3.75rem] flex items-center;
+  }
+
 
   .carousel__buttons__button--left {
-    @apply rounded-l-lg rounded-r-none border-r border-black pl-[1.375rem] pr-[1.375rem] max-h-[3.75rem] flex items-center hover:opacity-50;
+    @apply rounded-l-lg rounded-r-none border-r border-black;
   }
 
   .carousel__buttons__button--right {
-    @apply rounded-r-lg rounded-l-none pl-[1.375rem] pr-[1.375rem] max-h-[3.75rem] flex items-center hover:opacity-50;
+    @apply rounded-r-lg rounded-l-none;
   }
 
   .carousel .carousel__carousel .swiper-wrapper .swiper-slide {
@@ -266,20 +292,50 @@
 
   /* Newsletter Signup */
 
-  .newsletter .newsletter__content .newsletter__content__form .form__input input[type=text] {
-    @apply  border border-white rounded-lg bg-transparent text-white px-[1.19rem] py-[1.13rem] w-full text-sm font-text md:text-base focus:border-orange-500;
+  .newsletter .newsletter__content .newsletter__content__form input[type=text] {
+    @apply  border border-white rounded-lg bg-transparent text-white px-[1.19rem] py-[1.13rem] w-full text-sm font-text md:text-base focus:border-orange-500 h-fit lg:max-w-[23.8rem];
   }
 
-  .newsletter .newsletter__content .newsletter__content__form .form__input input[type=text]::placeholder {
+  .newsletter .newsletter__content .newsletter__content__form input[type=text]::placeholder {
     @apply text-white;
   }
-  
+   
   .newsletter .newsletter__background-image svg {
     @apply h-full;
   }
 
   .newsletter .newsletter__background-image--circle svg {
     @apply h-[2000px] w-[2000px];
+  }
+
+  .newsletter .newsletter__content .newsletter__content__form .form__checkbox .form__checkbox__container {
+    @apply block relative pl-[35px] mb-[12px] cursor-pointer text-base text-white font-extralight;
+  }
+
+  .newsletter .newsletter__content .newsletter__content__form .form__checkbox .form__checkbox__container input[type=checkbox]{
+    @apply absolute opacity-0 cursor-pointer h-0 w-0;
+  }
+
+  .newsletter .newsletter__content .newsletter__content__form .form__checkbox .form__checkbox__container input:checked ~ .form__checkbox__checkmark {
+    @apply bg-orange-500 border-orange-500;
+  }
+
+  .newsletter .newsletter__content .newsletter__content__form .form__checkbox .form__checkbox__container input:checked ~ .form__checkbox__checkmark:after {
+    display: block
+  }
+
+  .newsletter .newsletter__content .newsletter__content__form .form__checkbox .form__checkbox__container .form__checkbox__checkmark:after {
+    content: url(/assets/images/svg/tick.svg);
+    position: absolute;
+    display: none;
+    left: 4px;
+    top: -2px;
+    width: 5px;
+    height: 10px;
+}
+
+  .newsletter .newsletter__content .newsletter__content__form .form__checkbox .form__checkbox__container .form__checkbox__checkmark {
+    @apply absolute top-0 left-0 h-[24px] w-[24px] bg-none border rounded-lg border-white hover:border-orange-500;
   }
 
   .newsletter .newsletter__background-image {

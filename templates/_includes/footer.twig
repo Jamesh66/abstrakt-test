@@ -1,8 +1,32 @@
+<div class="side-nav bg-black fixed flex flex-col justify-between h-screen text-left p-[1.375rem] top-0 left-0 transition-all transform ease-in-out duration-300 w-full bg-footer z-20 translate-x-[-100%]">
+  <div class="side-nav__burger" id="burger">
+    <span class="h-[2px] w-[14px] bg-white rounded-full"></span>
+    <span class="h-[2px] w-[23px] bg-white rounded-full"></span>
+    <span class="h-[2px] w-[23px] bg-white rounded-full"></span>
+  </div>
+  <ul class="side-nav__menu my-auto flex flex-col gap-[2rem]">
+    <li class="side-nav__menu__link sub-menu"><a  class="button-minor"href="">Products<span title="{{ siteName }}">{{ svg('@webroot/assets/images/svg/chevron-down.svg') }}</span></a></li>
+    <li class="side-nav__menu__link sub-menu"><a class="button-minor" href="">Services<span title="{{ siteName }}">{{ svg('@webroot/assets/images/svg/chevron-down.svg') }}</span></a></li>
+    <li class="side-nav__menu__link"><a class="button-minor" href="">Resources</a></li>
+    <li class="side-nav__menu__link"><a class="button-minor" href="">Projects</a></li>
+    <li class="side-nav__menu__link"><a class="button-minor" href="">News</a></li>
+    <li class="side-nav__menu__link sub-menu"><a class="button-minor" href="">About<span title="{{ siteName }}">{{ svg('@webroot/assets/images/svg/chevron-down.svg') }}</span></a></li>
+  </ul>
+
+  <ul class="side-nav__sub-nav grid grid-cols-2 gap-[0.5rem] border-t-[1px] border-grey-800 pt-[0.75rem]">
+    <li><a href="" class="button-minor flex items-center gap-8 text-grey-300"><span>{{ svg('@webroot/assets/images/svg/brick-finder.svg')|attr({'width':'19px', 'height':'15px'}) }}</span>Brick Finder</a></li>
+    <li><a href="" class="button-minor flex items-center gap-8 text-grey-300"><span>{{ svg('@webroot/assets/images/svg/map-pin.svg')|attr({'width':'19px', 'height':'15px'}) }}</span>Our Locations</a></li>
+    <li><a href="" class="button-minor flex items-center gap-8 text-grey-300"><span>{{ svg('@webroot/assets/images/svg/search.svg')|attr({'width':'19px', 'height':'15px'}) }}</span>Search</a></li>
+    <li><a href="" class="button-minor flex items-center gap-8 text-grey-300"><span>{{ svg('@webroot/assets/images/svg/mail.svg')|attr({'width':'19px', 'height':'15px'}) }}</span>Contact</a></li>
+  </ul>
+</div>
+
+
 <footer class="footer container py-20 bg-black">
 
   <div class="footer__logo">
     <a href="{{siteUrl }}" class="flex focus:outline-none focus:shadow-outline">
-      <span title="{{ siteName }}">{{ svg('@webroot/assets/images/svg/brickibility-logo.svg') }}</span>
+      <span title="{{ siteName }}">{{ svg("@webroot/assets/images/svg/brickibility-logo.svg") }}</span>
     </a>
   </div>
 
@@ -14,40 +38,40 @@
           Mid Glamorgan, CF31 3XG</p>
       </div>
       <div class="footer__contact__links flex flex-col md:justify-end">
-        <a class="text-grey-300" href="">01656645222</a>
-        <a class="text-grey-300" href="mailto:sales@brickability.co.uk">sales@brickability.co.uk</a>
+        <a class="button-minor text-grey-300 w-fit" href="">01656645222</a>
+        <a class="button-minor text-grey-300" href="mailto:sales@brickability.co.uk">sales@brickability.co.uk</a>
       </div>
     </div>
 
     <div class="footer__nav mb-40 lg:mb-0">
       <h4 class="mb-20">Quick Links</h4>
       <ul> 
-        <li class=""><a href="">About us</a></li>
-        <li><a href="">Resources</a></li>
-        <li><a href="">Careers</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Contact us</a></li>
-        <li><a href="">News</a></li>
+        <li><a class="button-minor" href="">About us</a></li>
+        <li><a class="button-minor" href="">Resources</a></li>
+        <li><a class="button-minor" href="">Careers</a></li>
+        <li><a class="button-minor" href="">Projects</a></li>
+        <li><a class="button-minor" href="">Contact us</a></li>
+        <li><a class="button-minor" href="">News</a></li>
       </ul>
     </div>
 
     <div class="footer__social lg:flex lg:items-end">
       <ul class="flex gap-5 lg:flex-col">
-        <li><a href="">{{ svg('@webroot/assets/images/svg/linkedin.svg') }}</a></li>
-        <li><a href="">{{ svg('@webroot/assets/images/svg/facebook.svg') }}</a></li>
-        <li><a href="">{{ svg('@webroot/assets/images/svg/instagram.svg') }}</a></li>
-        <li><a href="">{{ svg('@webroot/assets/images/svg/pinterest.svg') }}</a></li>
+        <li><a class="text-white hover:text-orange-400" href="">{{ svg("@webroot/assets/images/svg/linkedin.svg") }}</a></li>
+        <li><a class="text-white hover:text-orange-400" href="">{{ svg("@webroot/assets/images/svg/facebook.svg") }}</a></li>
+        <li><a class="text-white hover:text-orange-400" href="">{{ svg("@webroot/assets/images/svg/instagram.svg") }}</a></li>
+        <li><a class="text-white hover:text-orange-400" href="">{{ svg("@webroot/assets/images/svg/pinterest.svg") }}</a></li>
       </ul>
     </div>
   </div>
 
   <div class="footer__copyright flex flex-col gap-[2rem] lg:flex-row lg:justify-between">
     <ul class="flex flex-col gap-[2rem] lg:flex-row">
-      <li><a href="">Terms & Conditions</a></li>
-      <li><a href="">Privacy Policy</a></li>
-      <li><a href="">Cookie Policy</a></li>
-      <li><a href="">Environmental Policy</a></li>
-      <li><a href="">Modern Slavery Statement</a></li>
+      <li><a class="hover:text-orange-400" href="">Terms & Conditions</a></li>
+      <li><a class="hover:text-orange-400" href="">Privacy Policy</a></li>
+      <li><a class="hover:text-orange-400" href="">Cookie Policy</a></li>
+      <li><a class="hover:text-orange-400" href="">Environmental Policy</a></li>
+      <li><a class="hover:text-orange-400" href="">Modern Slavery Statement</a></li>
     </ul>
     <p class="font-text text-xs text-grey-400">Copyright © 2023 - Brickability Limited | All Rights Reserved</p>  
   </div>

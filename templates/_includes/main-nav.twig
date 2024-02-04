@@ -14,7 +14,7 @@
         <span title="{{ siteName }}">{{ svg('@webroot/assets/images/svg/brickibility-logo.svg') }}</span>
       </a>
 
-      <div class="nav__lower__burger">
+      <div class="nav__lower__burger" id="burger">
         <span class="h-[2px] w-[14px] bg-white rounded-full"></span>
         <span class="h-[2px] w-[23px] bg-white rounded-full"></span>
         <span class="h-[2px] w-[23px] bg-white rounded-full"></span>
@@ -25,27 +25,20 @@
     <nav class="header__nav">
 
       <ul class="header__nav__upper flex justify-end gap-44">
-        <li><a href="" class="flex items-center gap-8 text-grey-300"><span>{{ svg('@webroot/assets/images/svg/brick-finder.svg')|attr({'width':'19px', 'height':'15px'}) }}</span>Brick Finder</a></li>
-        <li><a href="" class="flex items-center gap-8 text-grey-300"><span>{{ svg('@webroot/assets/images/svg/map-pin.svg')|attr({'width':'19px', 'height':'15px'}) }}</span>Our Locations</a></li>
-        <li><a href="" class="flex items-center gap-8 text-grey-300"><span>{{ svg('@webroot/assets/images/svg/search.svg')|attr({'width':'19px', 'height':'15px'}) }}</span>Search</a></li>
-        <li><a href="" class="flex items-center gap-8 text-grey-300"><span>{{ svg('@webroot/assets/images/svg/mail.svg')|attr({'width':'19px', 'height':'15px'}) }}</span>Contact</a></li>
+        <li><a href="" class="button-minor flex items-center gap-8 text-grey-300"><span>{{ svg('@webroot/assets/images/svg/brick-finder.svg')|attr({'width':'19px', 'height':'15px'}) }}</span>Brick Finder</a></li>
+        <li><a href="" class="button-minor flex items-center gap-8 text-grey-300"><span>{{ svg('@webroot/assets/images/svg/map-pin.svg')|attr({'width':'19px', 'height':'15px'}) }}</span>Our Locations</a></li>
+        <li><a href="" class="button-minor flex items-center gap-8 text-grey-300"><span>{{ svg('@webroot/assets/images/svg/search.svg')|attr({'width':'19px', 'height':'15px'}) }}</span>Search</a></li>
+        <li><a href="" class="button-minor flex items-center gap-8 text-grey-300"><span>{{ svg('@webroot/assets/images/svg/mail.svg')|attr({'width':'19px', 'height':'15px'}) }}</span>Contact</a></li>
       </ul>
 
       <ul class="header__nav__lower flex flex-row pl-0 m-0 gap-52 lg:flex-row">
-        <li class="header__nav__link sub-menu"><a href="">Products<span title="{{ siteName }}">{{ svg('@webroot/assets/images/svg/chevron-down.svg') }}</span></a></li>
-        <li class="header__nav__link sub-menu"><a href="">Services<span title="{{ siteName }}">{{ svg('@webroot/assets/images/svg/chevron-down.svg') }}</span></a></li>
-        <li class="header__nav__link"><a href="">Resources</a></li>
-        <li class="header__nav__link"><a href="">Projects</a></li>
-        <li class="header__nav__link"><a href="">News</a></li>
-        <li class="header__nav__link sub-menu"><a href="">About<span title="{{ siteName }}">{{ svg('@webroot/assets/images/svg/chevron-down.svg') }}</span></a></li>
+        <li class="header__nav__link sub-menu"><a class="button-minor" href="">Products<span title="{{ siteName }}">{{ svg('@webroot/assets/images/svg/chevron-down.svg') }}</span></a></li>
+        <li class="header__nav__link button-minor sub-menu"><a class="button-minor" href="">Services<span title="{{ siteName }}">{{ svg('@webroot/assets/images/svg/chevron-down.svg') }}</span></a></li>
+        <li class="header__nav__link button-minor"><a class="button-minor" href="">Resources</a></li>
+        <li class="header__nav__link button-minor"><a class="button-minor" href="">Projects</a></li>
+        <li class="header__nav__link button-minor"><a class="button-minor" href="">News</a></li>
+        <li class="header__nav__link sub-menu button-minor"><a class="button-minor" href="">About<span title="{{ siteName }}">{{ svg('@webroot/assets/images/svg/chevron-down.svg') }}</span></a></li>
       </ul> 
     </nav>
   </div>
 </nav>
-
-
-{% js %}
-  function toggleOverflow() {
-    document.getElementById('body').classList.toggle('overflow-hidden');
-  }
-{% endjs %}

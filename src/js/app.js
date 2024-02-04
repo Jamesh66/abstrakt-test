@@ -1,5 +1,17 @@
 /* add javascript here */
 
+// Hamburger menus
+const burger = document.querySelectorAll('#burger');
+const sideNav = document.querySelector('.side-nav');
+
+// loop through each button and add a click event listener
+burger.forEach(function(burger) {
+  burger.addEventListener('click' ,() => {
+    sideNav.classList.toggle('translate-x-[-100%]');
+  });
+});
+
+
 function stopVideo() {
 console.log('please stop');
 }
