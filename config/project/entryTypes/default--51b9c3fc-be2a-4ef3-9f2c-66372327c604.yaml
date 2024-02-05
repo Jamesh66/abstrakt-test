@@ -33,7 +33,7 @@ fieldLayouts:
             type: craft\fieldlayoutelements\Tip
             uid: f4aec492-bb0f-40b0-afbf-79a590fca8be
           -
-            fieldUid: b2f53aa5-81a3-466c-af2d-e30dab4ed3d8 # Image
+            fieldUid: b2f53aa5-81a3-466c-af2d-e30dab4ed3d8
             instructions: null
             label: null
             required: false
@@ -43,7 +43,7 @@ fieldLayouts:
             warning: null
             width: 50
           -
-            fieldUid: 95ce0179-ac46-4ecb-910c-aa91c7a07961 # Summary
+            fieldUid: 95ce0179-ac46-4ecb-910c-aa91c7a07961
             instructions: null
             label: null
             required: false

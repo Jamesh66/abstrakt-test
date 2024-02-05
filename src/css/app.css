@@ -164,7 +164,7 @@
   }
 
   .side-nav .side-nav__menu .side-nav__menu__link  a {
-    @apply font-bold font-text flex items-center gap-[7px];
+    @apply font-bold font-text text-xl flex items-center gap-[7px];
   }
 
   .side-nav .side-nav__sub-menu ul li {
@@ -231,7 +231,7 @@
   }
 
   .hero .hero__container .hero__input  select {
-    @apply  border border-white rounded-lg bg-transparent text-white px-[1.19rem] py-[1.13rem] w-[23.9rem] md:w-[31.1875rem] text-sm font-text md:text-base focus:border-orange-500  appearance-none bg-no-repeat bg-[url('/assets/images/svg/chevron-down.svg')];
+    @apply relative border border-white rounded-lg bg-transparent text-white px-[1.19rem] py-[1.13rem] w-[23.9rem] md:w-[31.1875rem] text-sm font-text md:text-base focus:border-orange-500 appearance-none bg-no-repeat bg-[url('/assets/images/svg/chevron-down.svg')];
     background-position-x: 95%;
     background-position-y: 50%;
   }

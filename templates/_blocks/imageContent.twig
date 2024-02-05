@@ -28,8 +28,12 @@
       </div>  
       {% endif %}
       <div class="image-content__content__button-group flex flex-col lg:flex-row gap-5">
-        <a class="button button-primary" href="/">Our businesses</a>
-        <a class="button button-secondary" href="/">Contact us</a>
+        {% if block.primaryButton %}
+          <a class="button button-primary" href="{{block.primaryButton}}">{{block.primaryButton.text}}</a>
+        {% endif %}
+        {% if block.secondaryButton %}
+          <a class="button button-secondary" href="{{block.secondaryButton}}">{{block.secondaryButton.text}}</a>
+        {% endif %}
       </div> 
     </div><!-- /.flex flex-row -->
   </div><!-- end container-->

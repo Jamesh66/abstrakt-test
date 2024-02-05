@@ -4,7 +4,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 12c7de12-987a-4aa4-890f-ec5cde880851 # Fallback Image
+            fieldUid: 12c7de12-987a-4aa4-890f-ec5cde880851
             instructions: null
             label: null
             required: false

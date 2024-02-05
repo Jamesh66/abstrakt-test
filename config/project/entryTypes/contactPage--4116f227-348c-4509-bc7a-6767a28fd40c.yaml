@@ -28,7 +28,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 56f86cc6-5713-447f-8b10-e53f06ef42eb # Hide from Nav
+            fieldUid: 56f86cc6-5713-447f-8b10-e53f06ef42eb
             instructions: null
             label: null
             required: false
@@ -56,7 +56,7 @@ fieldLayouts:
             type: craft\fieldlayoutelements\Tip
             uid: f070e260-a4d3-4c63-b54d-18e032a4f1c6
           -
-            fieldUid: c33fedfd-ec76-45db-93dc-a12697e4a2aa # Listing Image
+            fieldUid: c33fedfd-ec76-45db-93dc-a12697e4a2aa
             instructions: null
             label: null
             required: false
@@ -66,7 +66,7 @@ fieldLayouts:
             warning: null
             width: 25
           -
-            fieldUid: 95ce0179-ac46-4ecb-910c-aa91c7a07961 # Summary
+            fieldUid: 95ce0179-ac46-4ecb-910c-aa91c7a07961
             instructions: null
             label: null
             required: false
@@ -80,7 +80,7 @@ fieldLayouts:
             type: craft\fieldlayoutelements\Heading
             uid: b16c683b-ef39-4e18-86d3-fc3566be5c73
           -
-            fieldUid: f90a85bd-91b2-462b-acb4-8f265ded647e # Copy
+            fieldUid: f90a85bd-91b2-462b-acb4-8f265ded647e
             instructions: null
             label: null
             required: false

@@ -1002,6 +1002,8 @@ nav .header__nav .header__nav__link a {
           align-items: center;
   gap: 7px;
   font-family: halyard-text, sans-serif;
+  font-size: 21px;
+  line-height: 30px;
   font-weight: 700;
 }
 .side-nav .side-nav__sub-menu ul li {
@@ -1150,6 +1152,7 @@ footer .footer__copyright ul li a {
     }
   }
 .hero .hero__container .hero__input  select {
+  position: relative;
   width: 23.9rem;
   -webkit-appearance: none;
      -moz-appearance: none;

@@ -28,7 +28,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 5489ed3b-28c1-4a26-ac7e-97b0182e6652 # Enable Notice Bar
+            fieldUid: 5489ed3b-28c1-4a26-ac7e-97b0182e6652
             instructions: null
             label: null
             required: false
@@ -38,7 +38,7 @@ fieldLayouts:
             warning: null
             width: 50
           -
-            fieldUid: 52f12f1b-ba11-48f3-985d-0ee6e2a6dc4e # Notice Bar Location
+            fieldUid: 52f12f1b-ba11-48f3-985d-0ee6e2a6dc4e
             instructions: null
             label: null
             required: false
@@ -48,7 +48,7 @@ fieldLayouts:
             warning: null
             width: 50
           -
-            fieldUid: 136d3c61-5e7c-4eb4-afc0-5c78565fbe8b # Button
+            fieldUid: 136d3c61-5e7c-4eb4-afc0-5c78565fbe8b
             instructions: null
             label: null
             required: false
@@ -58,7 +58,7 @@ fieldLayouts:
             warning: null
             width: 75
           -
-            fieldUid: f4da8483-be1a-439d-8918-afde0ea14454 # Text
+            fieldUid: f4da8483-be1a-439d-8918-afde0ea14454
             instructions: null
             label: null
             required: false
